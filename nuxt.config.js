@@ -6,7 +6,6 @@ export default {
   ** Headers of the page
   */
   generate: {
-    subFolders: false
   },
   head: {
     title: "掌柜查查官网 - 反打假_防敲诈_曝光恶人_职业打假人查询_差评师查询 ",

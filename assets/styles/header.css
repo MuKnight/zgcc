@@ -1,0 +1,470 @@
+/*iconfont*/
+/*header*/
+.header {
+    height: 60px;
+    margin-top: 0;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.12);
+}
+
+.header .container {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.hd-main {
+    height: 100%;
+}
+
+.logo {
+    margin-right: 58px;
+}
+
+.header .nav::before,
+.header .nav::after {
+    content: none;
+}
+
+.header .nav li {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+
+.header .nav a {
+    color: #666;
+    font-size: 14px;
+}
+
+.header .nav li.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid #09f;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.3s linear;
+}
+
+.header .nav li:hover a,
+.nav li.active a {
+    color: #09f;
+}
+
+.hd-r {
+    position: relative;
+}
+
+.hd-r .btn-group>.layui-btn {
+    width: 80px;
+}
+
+.hd-r ul {
+    display: none;
+    transition: all 0.35s linear;
+}
+
+.message {
+    margin-left: 30px;
+    position: relative;
+}
+
+.message:hover ul {
+    display: block;
+}
+
+.message .iconfont {
+    width: 22px;
+    height: 18px;
+    color: #ffc300;
+}
+
+.message .layui-badge {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    border-radius: 50%;
+}
+
+.message ul {
+    position: absolute;
+    width: 170px;
+    box-shadow: 1px 1px 5px #aaa;
+    background: #fff;
+    z-index: 10;
+    padding: 10px 15px;
+    left: 0;
+    top: 25px;
+}
+
+.message ul::before {
+    content: "";
+    position: absolute;
+    border: 6px solid transparent;
+    border-left-color: #dedede;
+    border-top-color: #dedede;
+    top: -6px;
+    left: 6px;
+    transform: rotate(45deg);
+}
+
+.message ul li a {
+    font-size: 12px;
+}
+
+.message ul li a b {
+    color: #f00;
+}
+
+.message ul li a span {
+    float: right;
+}
+
+.user {
+    position: relative;
+    padding: 0 !important;
+}
+
+.user:hover .iconfont {
+    transform: rotateZ(-90deg);
+}
+
+.user:hover ul {
+    display: block;
+}
+
+.user p {
+    color: #08f;
+    font-weight: bold;
+}
+
+.user p>.iconfont {
+    margin-left: 10px;
+    transition: all 0.35s linear;
+    transform: rotateZ(90deg);
+    display: inline-block;
+}
+
+.user ul {
+    position: absolute;
+    background: #fff;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px #b3b3b3;
+    width: 180px;
+    right: 0;
+    z-index: 9;
+    padding-bottom: 10px;
+}
+
+.hd-r li .iconfont,
+.hd-r li a {
+    color: #999;
+    font-size: 14px;
+}
+
+.user ul li {
+    font-size: 16px;
+    color: #333;
+    padding: 5px 0 5px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+}
+
+.user ul li:not(:first-child) {
+    line-height: 2em;
+}
+
+.user ul li:not(:first-child):hover {
+    background: gainsboro;
+}
+
+.notice {
+    width: 16px;
+}
+
+.el-badge__content {
+    background-color: #f56c6c;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 6px;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #fff;
+}
+
+.el-badge__content.is-fixed {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: translateY(-50%) translateX(100%);
+}
+
+.letter {
+    display: none;
+}
+
+/**/
+.header .nav>li>a {
+    padding: 0;
+}
+
+.header .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*瓒呭皬灞忓箷 header*/
+.vux-header {
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 8;
+    padding: 3px 0;
+    box-sizing: border-box;
+    background-color: #35495e;
+}
+
+.vux-header .vux-header-left {
+    left: 18px;
+}
+
+.vux-header .vux-header-left,
+.vux-header .vux-header-right {
+    position: absolute;
+    top: 14px;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ccc;
+}
+
+.vux-header .vux-header-left a {
+    float: left;
+    margin-right: 8px;
+    color: #ccc;
+}
+
+.vux-header .vux-header-left .vux-header-back {
+    padding-left: 16px;
+}
+
+.vux-header .vux-header-left .left-arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: -5px;
+}
+
+.vux-header .vux-header-left .left-arrow:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    border-width: 1px 0 0 1px;
+    transform: rotate(315deg);
+    top: 8px;
+    left: 7px;
+}
+
+.vux-header .vux-header-title {
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.vux-header-title-area,
+.vux-header .vux-header-title {
+    margin: 0 88px;
+    height: 40px;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*瓒呭皬灞忓箷 footer*/
+.weui-tabbar {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 500;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7fa;
+}
+
+.weui-tabbar:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #c0bfc4;
+    color: #c0bfc4;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+}
+
+.weui-tabbar__item {
+    display: block;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 5px 0 0;
+    font-size: 0;
+    color: #999;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.tab-icon {
+    background: url(/static/img/pub_main.6732278.png) no-repeat;
+    background-size: auto 400px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+.icon1 {
+    background-position: 0 -1px;
+}
+
+.icon2 {
+    background-position: 0 -72px;
+}
+
+.icon3 {
+    background-position: 0 -133px;
+}
+
+.weui-tabbar__icon>i,
+i.weui-tabbar__icon {
+    font-size: 24px;
+    color: #999;
+}
+
+.weui-tabbar__label {
+    text-align: center;
+    color: #999;
+    font-size: 10px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.ad-block {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    min-height: 334px;
+}
+
+.new {
+    position: relative;
+}
+
+.new::after {
+    content: "";
+    right: -5px;
+    top: -15px;
+    /* background: url(../img/wechat-mall/new.gif) no-repeat; */
+    position: absolute;
+    width: 22px;
+    height: 15px;
+}
+
+/* 7.31 */
+.pull-down {
+    cursor: pointer;
+    position: relative;
+}
+
+.pull-down:hover ul.pull-down-ul {
+    transition: max-height 0.25s ease-in;
+    max-height: 300px;
+}
+
+.pull-down:hover ul.pull-down-ul a {
+    color: #666;
+}
+
+.pull-down span {
+    padding: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.pull-down>.pull-down-box {
+    position: absolute;
+    left: -15px;
+    z-index: 99999;
+    width: calc(100% + 30px);
+}
+
+.pull-down ul.pull-down-ul {
+    transition: max-height 0.15s ease-out;
+    max-height: 0;
+    margin-top: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
+    background: white;
+    overflow: hidden;
+}
+
+.pull-down ul.pull-down-ul li {
+    width: 100%;
+    margin-left: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.pull-down ul.pull-down-ul li:hover a {
+    color: #09f;
+}
+
+/**搴楅摵妫�娴�**/
+.drop-menu {
+    position: relative;
+}
+
+.drop-menu:hover .drop-body {
+    height: 78px;
+}
+
+.drop-menu:hover .drop-body.num3 {
+    height: 80px;
+}
+
+.drop-body {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.15s linear;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    background: #fff;
+    z-index: 9;
+    box-shadow: 0 1px 5px #ddd;
+    width: 150px;
+    border-radius: 4px;
+}
+
+.drop-body a {
+    padding: 10px 15px;
+    display: block;
+    color: #666 !important;
+}
+
+.drop-body a:hover {
+    color: #fff !important;
+    background: #09f;
+}
